@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgb(192, 253, 251);
+    color: black;
+}
+header a{
+    color: black;
+    margin: 6px;
+}
+header nav a:hover{
+    color: darkgoldenrod;
+}
+nav{
+    border-radius: 6px;
+    box-shadow: 0px 10px 30px -5px rgba(195, 182, 182, 0.75);
+    background-color: transparent; /* Cambiado a transparente */
+    width: 500px;
+    text-align: center;
+    shape-margin: 7px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+#disponible{
+    border-radius: 15px;
+    background-color: rgb(231, 219, 219);
+    padding: 5px;
+    border: 1px solid green;
+    transition: all ease 300ms;
+       
+}
+#disponible:hover{
+    transform: scale(1.05);
+}
+#disponible {
+    position: relative;
+    overflow: hidden;
+}
+
+#disponible:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #fff, transparent);
+    transition: 0.5s;
+}
+
+#disponible:hover:before {
+    left: 100%;
+}
+#disponible {
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 10px darkgoldenrod;
+}
+
+#disponible:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 5px darkgoldenrod, 0 0 15px darkgoldenrod, 0 0 18px darkgoldenrod;
+}
+#disponible {
+    position: relative;
+    border: 3px solid #fff;
+    overflow: hidden;
+}
+
+#disponible:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, #fff, transparent);
+    transform: rotate(0deg);
+    transition: transform 2s linear infinite;
+}
+
+#disponible:hover:before {
+    transform: rotate(360deg);
+}
+
+
+#perfil{
+    width: 150px;
+    border-radius: 100px;    
+    
+}
+main{
+    margin: 100px 20px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+    }
+    #perfil {
+        width: 50px;
+    }
+    main {
+        margin: 50px 10px;
+    }
+}
+#centrar{
+   
+    display: flex;
+    align-items: center;
+    /* column-gap: 20px; */
+          
+}
+#centrar > a{
+    margin-left: 15px;
+}
+.letra{
+    color: rgb(211, 187, 52);
+    font-weight: bold;
+}
+.contact{
+    background-color:  rgb(231, 219, 219);
+    border-radius: 15px;
+    color: black;
+    padding: 3px;
+    margin: 15px 5px;
+    display: inline-block;
+}
+.contact i {
+    font-size: 15px;
+}
+
+.contact:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.contact:hover i {
+    color: white;
+}
+
+h1{
+    font-size: 28px;
+    margin-top: 20px;
+    margin: 15px 0;
+    font-weight: 800;
+}
+p{
+    font-size: 18px;
+}
+
+
